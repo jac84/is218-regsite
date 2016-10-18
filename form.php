@@ -32,9 +32,9 @@
 		<input type = “text” id = “passwordconf” name = “user_passwordconf” />
 	</div>
 	<div>
-		<input type = "submit" value = "Submit">
+		<div class = "button">
+		<button type = "submit">Thank you for registering!</button>
 	</div>
-
-
+</form>
 
 
