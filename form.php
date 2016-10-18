@@ -1,40 +1,62 @@
 <!DOCTYPE html>
+<html>
+<head>
+	<title> Sign up today! </title>
+</head>
 
+<body>
 <form action = "form.php" method = "post">
 	<div>
-		<label for = "name"> Name: </label>
-		<input type = "text" id = "name" name = "user_name" />
+		<center>
+		<label for = "name"> Name: </label> <br>
+		<input type = "text" id = "name" name = "user_name" /> <br>
+		</center>
 	</div>
 	<div>
-		<label for = "mail" > E-mail: </label>
-		<input type = "email" id = "mail" name = "user_mail" />
+		<center>
+		<label for = "mail" > E-mail: </label> <br>
+		<input type = "email" id = "mail" name = "user_mail" /> <br>
+		</center>
 	</div>
 	<div>
-		<label for = “username”> Username: </label>
-		<input type = “text” id = “username” name = “user_username” />
-
+		<center>
+		<label for = “username”> Username: </label> <br>
+		<input type = “text” id = “username” name = “user_username” /> <br>
+		</center>
 	</div>
 	<div>
-		<label for = “age”> Age: </label>
-		<input type = “text” id = “age” name = “user_age” />
+		<center>
+		<label for = “age”> Age: </label> <br>
+		<input type = “text” id = “age” name = “user_age” /> <br>
+		</center>
 	</div>
 	<div>
-		<label for = “gender”> Gender: </label>
-		<input type = “radio” name = "gender" value = "male" Male />
-		<input type = "radio" name = "gender" value = "female" Female />
+		<center>
+		<label for = “gender”> Gender: </label> <br>
+		<input type = “radio” name = "gender" value = "male" Male /> <br>
+		<input type = "radio" name = "gender" value = "female" Female /> <br>
+		</center>
 	</div>
 	<div>
-		<label for = “password”> Password: </label>
-		<input type = “text” id = “password” name = “user_password” />
+		<center>
+		<label for = “password”> Password: </label> <br>
+		<input type = “text” id = “password” name = “user_password” /> <br>
+		</center>
 	</div>
 	<div>
-		<label for = “passwordconf”> Confirm Passowrd: </label>
-		<input type = “text” id = “passwordconf” name = “user_passwordconf” />
+		<center>
+		<label for = “passwordconf”> Confirm Passowrd: </label> <br>
+		<input type = “text” id = “passwordconf” name = “user_passwordconf” /> <br>
+		</center>
 	</div>
 	<div>
-		<div class = "button">
+		<center>
+		<div class = "button"> <br>
 		<button type = "submit">Thank you for registering!</button>
+		</center>
 	</div>
+</body>
+</html>
 </form>
 
 
