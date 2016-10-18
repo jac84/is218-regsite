@@ -9,7 +9,7 @@
 <form action = "form.php" method = "post">
 	<div>
 		<center>
-		<h1> Sign up today! </h1> <br> <br> <br>
+		<h1> Sign up today! </h1> <br> <br>
 		</center>
 	</div>
 	<div>
