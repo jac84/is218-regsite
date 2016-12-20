@@ -1,3 +1,5 @@
+<!--CONNECT LogSession SINGLETON TO ALL PAGES-->
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -18,6 +20,22 @@
     <input type="submit" value="Log In" />
     <!--TODO: figure out appending data into SQL (INSERT <> to TABLE)-->
   </form>
+  <br /><br />
+  Already have an account?
+  <a href="https://web.njit.edu/~jac84/is218001f16/final_site/login.html">Sign in here</a>
   </center>
 </body>
 </html>
+<!-- WHAT TO DO AFTER USER REGISTERS
+1. Check for Validation/Sanitation
+2. Check if username or email is already in table
+  - if username is already in table, throw notice to change username
+  - if email is already in table, throw notice to change email
+3. Send email verification
+  - Newly-made users will have isValid in User table set to 0
+  - When validated, isValid will set to 1
+  - well skip this if we cant figure that out
+4. Insert user data into table
+  - generate new UserId key
+5. Create user profile
+-->
