@@ -1,12 +1,14 @@
 CREATE DATABASE is218regsite;
 
-CREATE TABLE Users(
-  memberID int(11) NOT NULL AUTO_INCREMENT,
-  username varchar(255) NOT NULL,
-  password varchar(255) NOT NULL,
+CREATE TABLE RegSiteUsers(
+  userId int(11) NOT NULL AUTO_INCREMENT,
+  username varchar(20) NOT NULL,
+  password varchar(20) NOT NULL,
   email varchar(255) NOT NULL,
-  active varchar(255) NOT NULL,
-  resetToken varchar(255) DEFAULT NULL,
-  resetComplete varchar(3) DEFAULT 'No',
+  active boolean NOT NULL,
   PRIMARY KEY (memberID)
+)
+
+INSERT INTO RegSiteUsers Values(
+    1, 'TEST', 'testpasswd', 'jac84@njit.edu', true
 )
