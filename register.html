@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
+
 <html>
 <head>
+  <php?
+    require 'register.php';
+  ?>
   <title>Register - IS218001 Final Project</title>
 </head>
 <body>
@@ -8,7 +12,8 @@
   <h1>Register for IS218-001 Final Project</h1>
   <br />
   <!--TODO: add php class to sanitize/validate data and check _POST[] with DB Table -->
-  <form>
+  <form action="register.php" method="checkValidation">
+
     Email:
     <input type="text" name="email" /><br />
     Username:
