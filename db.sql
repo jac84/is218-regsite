@@ -1,6 +1,6 @@
 CREATE DATABASE is218regsite;
 
-CREATE TABLE Users(
+CREATE TABLE RegSiteUsers(
   memberID int(11) NOT NULL AUTO_INCREMENT,
   username varchar(255) NOT NULL,
   password varchar(255) NOT NULL,
