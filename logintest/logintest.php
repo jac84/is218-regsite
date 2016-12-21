@@ -10,33 +10,21 @@ if(isset($_POST['submit'])){
 	$uname = $_POST['username'];
 	$passwd = $_POST['password'];
 
-	if($user->login($username,$password)){
-		$_SESSION['username'] = $username;
-		header('Location: memberpage.php');
+	if($user->login($uname,$passwd)){
+		$_SESSION['username'] = $uname;
+		header('Location: userprofile.php');
 		exit;
 
 	} else {
-		$error[] = 'Wrong username or password or your account has not been activated.';
+		$error[] = 'Username or password is wrong';
 	}
-}//end if submit
-//define page title
+}
+
 $title = 'Login';
 //include header template
 require('layout/header.php');
-?>
 
-<div class="container">
-
-	<div class="row">
-
-	    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-			<form role="form" method="post" action="" autocomplete="off">
-				<h2>Please Login</h2>
-				<p><a href='./'>Back to home page</a></p>
-				<hr>
-
-				<?php
-				//check for any errors
+			//check for any errors
 				if(isset($error)){
 					foreach($error as $error){
 						echo '<p class="bg-danger">'.$error.'</p>';
@@ -46,13 +34,13 @@ require('layout/header.php');
 					//check the action
 					switch ($_GET['action']) {
 						case 'active':
-							echo "<h2 class='bg-success'>Your account is now active you may now log in.</h2>";
+							echo "<h2 class='bg-success'>Account is active. Please log in.</h2>";
 							break;
 						case 'reset':
-							echo "<h2 class='bg-success'>Please check your inbox for a reset link.</h2>";
+							echo "<h2 class='bg-success'>Look for reset link.</h2>";
 							break;
 						case 'resetAccount':
-							echo "<h2 class='bg-success'>Password changed, you may now login.</h2>";
+							echo "<h2 class='bg-success'>Password change successful.</h2>";
 							break;
 					}
 				}
