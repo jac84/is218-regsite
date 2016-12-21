@@ -11,6 +11,8 @@ define('DBUSER','jac84');
 define('DBPASS','Aa9v010j');
 define('DBNAME','jac84');
 
+session_save_path();
+
 try {
 	$db = new PDO("mysql:host=".DBHOST.";dbname=".DBNAME, DBUSER, DBPASS);
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -20,5 +22,5 @@ try {
 }
 
 include('classes/user.php');
-$user = new User($db);
+//$user = new User($db);
 ?>
