@@ -49,14 +49,14 @@ class register
       {
         try
         {
-          /*$stmt = $this->db->prepare("INSERT INTO RegSiteUsers(user_name,user_email,user_pass) VALUES(:uname, :umail, :upass)");
-          $stmt = $DB_con->prepare("SELECT user_name,user_email FROM RegSiteUsers WHERE user_name=:uname OR user_email=:umail");
+
+          /*$stmt = $DB_con->prepare("SELECT user_name,user_email FROM RegSiteUsers WHERE user_name=:uname OR user_email=:umail");
           $stmt->execute(array(':uname'=>$uname, ':umail'=>$umail));
           $row=$stmt->fetch(PDO::FETCH_ASSOC);*/
 
 
 
-          /*if($row['user_name']==$uname)
+          if($row['user_name']==$uname)
           {
             $error[] = "sorry username already taken !";
           }
@@ -71,7 +71,7 @@ class register
               echo 'Registration Successful';
 
             }
-          } */
+          }
         }
         catch(PDOException $e)
         {
